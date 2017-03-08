@@ -1,0 +1,748 @@
+/*
+Orange color: #e67e22
+
+*/
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    color: #6825ff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%;
+}
+
+h1,
+h2,
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box p{
+    font-size:90%;
+    line-height: 145%;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+
+.proposal-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topimage.png);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 50%;
+}
+
+.black-logo {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0px;
+}
+
+
+
+/*Mobile Navigation*/
+
+.mobile-nav-icon{
+    float:right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
+}
+/*Sticky Nav*/
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 999;
+}
+
+.sticky .main-nav{
+    margin-top: 25px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 18px 0;
+    color: #555;
+    font-size: 90%;
+}
+
+.sticky .logo {
+    display: none}
+
+.sticky .black-logo {
+    display: block;
+    height: 60px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 52.5%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/* ----------------------------------------------- */
+/* WEDDING pg.1 */
+/* ----------------------------------------------- */
+
+.stories-mobile{
+    display: none;
+}
+
+.main-page{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topimage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+section.wedding{
+    width: 80%;
+    margin: auto;
+}
+
+section.wedding h2{
+   width: 100%;
+}
+
+.invite{
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.counter{
+    width: 100%;
+    height: 15%;
+    float: left;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f3f2;
+
+}
+
+
+.counter-title h1 {
+   text-align: center;
+   background-color:#ffa19a;
+   color: #fff;
+   width: 90%;
+   margin: auto;
+   margin: 5% 5% 2% 5%;
+   height: 40px;
+   border-radius: 10px;
+
+
+}
+
+#clockdiv{
+    color: #000;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 15px;
+    font-weight: 300;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 10px;
+}
+
+section.stories{
+    width: 80%;
+    margin: auto;
+}
+
+.her img{
+    width: 60%;
+    height: auto;
+}
+
+.her-text, .his-text {
+    float: left;
+    font-size: 90%;
+    width: 100%;
+}
+
+/* ----- PHOTO SHOWCASE ----- */
+
+.photo-section {
+    background-color: #f4f4f4;
+    height: 1000px;
+}
+
+.photo-section{
+    padding: 0;
+}
+
+.photo-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.photo-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.couple-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.couple-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: 375px;
+    transform: scale(1.2);
+    transition: transform 0.5s, opacity 0.5s;
+    cursor: pointer;
+}
+
+.couple-photo img:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.mySlides img{
+    height: 500px;
+    width: auto;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0px;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  background-color: rgba(227, 226, 226, 0.76);
+}
+
+/* Modal Content */
+.modal-content {
+    top: 10%;
+    text-align: center;
+  position: relative;
+  background-color: rgba(254, 254, 254, 0.15);
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* The Close Button */
+.close {
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(152, 148, 148, 0.76);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+/* ----------------------------------------------- */
+/* PROPOSAL page */
+/* ----------------------------------------------- */
+
+.proposal-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topimage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.container-proposal {
+  width: 100%;
+  height: 900px;
+  margin: 0 auto;
+}
+
+.slide-row{
+  width: 70%;
+  height: 500px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  padding: 3%;
+  background-color: #D1D0CE;
+  margin-top: 5%;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  margin-left: 3%;
+  margin-top: 5%;
+
+}
+
+.slide-row > .column {
+  padding: 0 3px;
+}
+
+.slide-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column img{
+  border-radius: 20px;
+    cursor: pointer;
+
+}
+
+
+
+
+/* ----------------------------------------------- */
+/* RSVP page */
+/* ----------------------------------------------- */
+
+.rsvp-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topimage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.rsvp-form{
+  margin: auto;
+  width: 60%;
+  text-align:left;
+  font-size: 20px;
+
+}
+.container-rsvp h2{
+  padding-top: 40px;
+}
+
+.container-rsvp p{
+  text-align: center;
+    padding: 40px 0;
+}
+
+.form-messages{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.success{
+    background-color: rgba(52, 199, 46, 0.81);
+}
+
+.error{
+    background-color: rgba(208, 36, 36, 0.8);
+}
+
+form label {
+    font-size: 90%;
+}
+
+#lname{
+  width: 49.5%;
+}
+
+#fname{
+  width:49.5%;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #cecece;
+    color: #8b8686;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #cecece;
+    color: #8b8686;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #cecece;
+    color: #8b8686;
+
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    background-color: #cecece;
+    color: #8b8686;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color:#e67e22;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background: #c66109;
+}
+
+
+/* ----------------------------------------------- */
+/* VENUE page */
+/* ----------------------------------------------- */
+
+.venue-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topimage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+section.venue{
+    height: 800px;
+    width: 80%;
+    margin: auto;
+}
+.wedding-venue{
+  width: 100%;
+  margin-bottom: 20px;
+    }
+
+.wedding-venue h4{
+  padding-bottom: 15px;;
+}
+
+.wedding-venue h3{
+    text-align: right;
+}
+
+.wedding-venue p{
+    font-size: 80%;
+}
+
+.court li{
+    font-size: 90%;
+    padding-bottom: 20px;
+}
+
+.court li strong{
+    color: rgba(201, 161, 27, 0.84)
+}
+iframe{
+  width: 100%;
+  height: 200px;
+  frameborder:0;
+  border: solid #e67e22;
+  }
+
+/* ----------------------------------------------- */
+/* REGISTRY page */
+/* ----------------------------------------------- */
+
+.registry-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topimage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.registry-container{
+    width: 80%;
+    height: 600px;
+    margin: auto;
+}
+.fund{
+  height: 400px;
+  width: 60%;
+  padding:5px;
+  margin-top: 5%;
+}
+
+.fund p{
+    padding-bottom:;
+}
+
+.links {
+  height: 400px;
+  width: 35%;
+  padding:5px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.links img:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=10);
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer{
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}

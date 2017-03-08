@@ -1,0 +1,562 @@
+
+/*Small Computer Screens*/
+
+@media only screen and (max-width: 1200px){
+       .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2%; }
+}
+}
+
+
+/*Tablets*/
+
+@media only screen and (max-width: 1023px){
+     body { font-size: 60px; }
+    section { padding: 60px 0; }
+    
+  .main-nav li{
+    display: inline;
+    margin-left: 10px;
+}
+}
+
+/*Bigger Phones*/
+
+@media only screen and (max-width: 767px){
+    
+.main-nav { display: none; }
+    .mobile-nav-icon {display: inline-block;}
+    
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+    
+    
+    
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    
+    
+    .logo{
+        margin: 20px 0 10px 15%;
+        height: 70px;
+        width: auto;
+        float: left;
+        margin-top: 30px;
+    }
+    
+    
+/* ----------------------------------------------- */
+/* WEDDING page */
+/* ----------------------------------------------- */
+    
+     .main-page{
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topmobileimage.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topmobileimage.png);
+         background-size: contain;
+    }
+
+    section.wedding{
+        width: 90%;
+        margin: auto;
+    }
+    
+     section.wedding p{
+       font-size: 80%
+    }
+    
+    .photo-showcase li {
+        width: 50%;
+    }
+    
+    #clockdiv{
+        display: inline-block;
+        font-weight: 100;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #clockdiv > div{
+        padding: 5px;
+        border-radius: 3px;
+        background: #00BF96;
+        display: inline-block;
+    }
+
+    #clockdiv div > span{
+        padding: 10px;
+        border-radius: 3px;
+        background: #00816A;
+        display: inline-block;
+    }
+
+    .smalltext{
+        padding-top: 5px;
+        font-size: 10px;
+    }
+/* ----------------------------------------------- */
+/* RSVP page */
+/* ----------------------------------------------- */
+
+
+
+
+    .rsvp-form{
+      margin: auto;
+      width: 80%;
+      text-align:left;
+      font-size: 20px;
+
+    }
+
+    .container-rsvp h2{
+      padding-top: 40px;
+      width: 85%;
+      margin: auto;
+
+        }
+
+
+
+
+    .success{
+        background-color: rgba(52, 199, 46, 0.81);
+        width: 100%;
+    }
+
+    .error{
+        background-color: rgba(208, 36, 36, 0.8);
+        width: 100%;
+    }
+
+
+    #lname{
+      width: 100%;
+    }
+
+    #fname{
+      width:100%;
+    }
+
+    
+    /* ----------------------------------------------- */
+/* VENUE page */
+/* ----------------------------------------------- */
+
+.venue-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topmobileimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topmobileimage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+section.venue{
+    height: 1200px;
+    width: 80%;
+    margin: auto;
+}
+.wedding-venue{
+  width: 100%;
+  margin-bottom: 20px;
+    }
+    
+.venue h2{
+    width: 100%;
+    }
+
+.wedding-venue h4{
+  padding-bottom: 15px;
+    text-align: center;
+}
+
+.wedding-venue h3{
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+.wedding-venue p{
+    font-size: 80%;
+}
+
+.court li{
+    font-size: 90%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+}
+
+/*Small Phones*/
+
+@media only screen and (max-width: 480px){
+    
+     body { font-size: 16px; }
+    section { padding: 30px 0; }
+    
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+    
+    .main-nav { display: none; }
+    .mobile-nav-icon {display: inline-block;}
+    
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+    
+    
+    
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    
+    
+    .logo{
+        margin: 20px 0 10px 15%;
+    }
+    
+    
+    .stories {display: none}
+    
+    .stories-mobile{
+        display: block;
+    }
+    
+    .stories-mobile .her img{
+        margin-left:20%;
+        border: 5px solid #e67e22;
+    }
+    
+    .stories-mobile h3{
+        font-weight: bold;
+    }
+/* ----------------------------------------------- */
+/* WEDDING page */
+/* ----------------------------------------------- */
+
+    .main-page{
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topmobileimage.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topmobileimage.png);
+        background-size: contain;
+    }
+    
+    section.wedding{
+        width: 90%;
+        margin: auto;
+    }
+    
+     section.wedding p{
+       font-size: 80%
+    }
+    
+    .photo-showcase li {
+        width: 50%;
+    }
+    
+    #clockdiv{
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 15px;
+    }
+
+    #clockdiv > div{
+        padding: 5px;
+        border-radius: 3px;
+        background: #00BF96;
+        display: inline-block;
+    }
+
+    #clockdiv div > span{
+        padding: 10px;
+        border-radius: 3px;
+        background: #00816A;
+        display: inline-block;
+    }
+
+    .smalltext{
+        padding-top: 5px;
+        font-size: 10px;
+    }
+    
+    .couple-photo img {
+        height: 200px;
+      
+}
+
+    /* The Close Button */
+    .close {
+        bottom: 10%;
+        font-size: 30px;
+        right: 40%;
+        color: #e67e22;
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 40px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .prev,
+    .next {
+      font-size: 30px;
+    }
+    
+    .close:hover {
+        background-color: rgba(152, 148, 148, 0.76);
+        color: #e67e22;
+    }
+
+    .numbertext {
+      color: #e67e22;
+      font-size: 20px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 10%;
+    }
+    
+    
+/* ----------------------------------------------- */
+/* PROPOSAL page */
+/* ----------------------------------------------- */
+
+.proposal-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topmobileimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topmobileimage.png);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.container-proposal {
+  width: 100%;
+  height: 900px;
+  margin: 20px auto;
+}
+
+.slide-row{
+  width: 90%;
+  height: 800px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  padding: 1%;
+  background-color: #dddddd;
+
+  margin-top: 5%;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  margin-left: 3%;
+  margin-top: 5%;
+    margin-right: 20px;
+
+}
+
+
+    
+/* ----------------------------------------------- */
+/* RSVP page */
+/* ----------------------------------------------- */
+    
+.rsvp-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topmobileimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topmobileimage.png);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+    
+    .rsvp-form{
+      margin: auto;
+      width: 80%;
+      text-align:left;
+      font-size: 20px;
+
+    }
+
+    .container-rsvp h2{
+      padding-top: 40px;
+      width: 85%;
+      margin: auto;
+
+        }
+
+
+
+
+    .success{
+        background-color: rgba(52, 199, 46, 0.81);
+        width: 100%;
+    }
+
+    .error{
+        background-color: rgba(208, 36, 36, 0.8);
+        width: 100%;
+    }
+
+
+    #lname{
+      width: 100%;
+    }
+
+    #fname{
+      width:100%;
+    }
+
+    
+/* ----------------------------------------------- */
+/* VENUE page */
+/* ----------------------------------------------- */
+
+.venue-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topmobileimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/topmobileimage.png);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+section.venue{
+    height: 1200px;
+    width: 80%;
+    margin: auto;
+}
+.wedding-venue{
+  width: 100%;
+  margin-bottom: 20px;
+    }
+    
+.venue h2{
+    width: 100%;
+    }
+
+.wedding-venue h4{
+  padding-bottom: 15px;
+    text-align: center;
+}
+
+.wedding-venue h3{
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+.wedding-venue p{
+    font-size: 80%;
+}
+
+.court li{
+    font-size: 90%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+    .details span{
+        display: none;
+    }
+/* ----------------------------------------------- */
+/* REGISTRY page */
+/* ----------------------------------------------- */
+
+.registry-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topmobileimage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/topmobileimage.png);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    }
+    .registry-container{
+        width: 90%;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .fund{
+      height: 250px;
+      width: 100%;
+      padding:5px;
+      margin-top: 5%;
+    }
+
+
+    .links {
+      height: 400px;
+      width: 100%;
+      padding:5px;
+      text-align: center;
+    }
+
+    .links img{
+        width: 300px;
+        height: auto;
+
+        
+    }
+    
+    .links img:hover{
+      opacity: 0.5;
+      filter: alpha(opacity=10);
+    }
+
+    
+}
